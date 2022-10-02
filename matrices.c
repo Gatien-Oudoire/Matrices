@@ -40,8 +40,6 @@ Matrice multiplier(Matrice a, Matrice b) {
 
       // Z_i,j = Σ 1≤k≤n Ai,k*Bk,j
       for (int k = 0; k < b.lignes; k++) {
-        // printf("z(j, i) += a(%d, %d) * b(%d, %d) = %d\n", j, k, k, i,
-        // a.valeurs[j][k] * b.valeurs[k][i]);
         z.valeurs[i][j] += a.valeurs[i][k] * b.valeurs[k][j];
       }
     }
